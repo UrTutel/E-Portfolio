@@ -1,0 +1,425 @@
+@font-face {
+    font-family: "Pixel";
+    src: url(fonts/Pixeboy-z8XGD.ttf);
+    
+}
+@font-face {
+    font-family: "Header Pixel";
+    src: url(fonts/MinecraftTen-VGORe.ttf);
+    /* "ƒ" for CREEPER A */
+}
+@font-face {
+    font-family: "Standard Pixel";
+    src: url(fonts/MinecraftRegular-Bmg3.otf);
+}
+@font-face {
+    font-family: "Bold Pixel";
+    src: url(fonts/MinecraftBold-nMK1.otf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+background-color: #080808f6;
+color: #fff;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/backround.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.container{
+    padding: 10px 10%;
+}
+nav{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo{
+    width: 140px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 15px;
+
+}
+nav ul li a{
+    font-family: "Bold Pixel";
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #10a33b;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+
+}
+nav ul li a:hover::after{
+width: 100%;
+
+}
+.headerText{
+    
+    margin-left: 10%;
+    margin-top: 6.9%;
+    font-size: 20px;
+}
+.headerText h1{
+    font-family: "Header Pixel";
+    font-size: 70px;
+    margin-top: 10px;
+}
+.headerText h1 span{
+    font-family: "Header Pixel";
+    color: #10a33b;
+}
+.headerText p{
+    margin-top: 1%;
+    font-family: "Standard Pixel";
+    color: black;
+    
+}
+.headerText p1{
+font-family: "Standard Pixel";
+font-size: 17px;
+    margin-bottom: 10px;
+}
+
+/* ----------About----------- */
+#about{
+    padding: 80px 0;
+    color: #ababab;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius:15px ;
+}
+.about-col-2{
+    flex-basis: 60%;
+}
+.title{
+    font-family: "Header Pixel";
+    margin-bottom: 10px;
+    font-size: 50px;
+    font-weight: 600;
+    color: #fff;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.aboutpara{
+    font-family: "Standard Pixel";
+}
+.tab-links{
+    font-family: "Standard Pixel";
+    display: inline-block;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+content: '';
+width: 0;
+height: 3px;
+background: #10a33b;
+position: absolute;
+left: 0;
+bottom: -8px;
+transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width: 50%;
+}
+.tab-contents ul li{
+    font-family: "Standard Pixel";
+    list-style: none;
+    margin: 10px 0;
+    margin-top: 10px;
+}
+.tab-contents ul li span{
+    font-family: "Standard Pixel";
+    color: #10a33b;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+
+
+/* --------------works---------------------- */
+
+#works{
+    padding: 50px 0;
+}
+.work-list{
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+grid-gap: 40px;
+margin-top: 50px;
+}
+
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+.work2{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work2 img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+.layer{
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0,0,0,0.6),#10a33b);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+padding: 0 40px;
+text-align: center;
+font-size: 14px;
+transition: height 0.5s;
+}
+.layer h3{
+    font-family: "Standard pixel";
+    font-weight: 500;
+    margin-bottom: 20px;
+
+}
+.layer p{
+    font-family: "Standard pixel";
+}
+.layer a{
+    margin-top: 20px;
+    color: #10a33b;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 50px;
+    background: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+}
+.layer2{
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0,0,0,0.6),#10a33b);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin-bottom: 33px;
+    overflow: hidden;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+padding: 0 40px;
+text-align: center;
+font-size: 14px;
+transition: height 0.5s;
+}
+.layer2 h3{
+    font-family: "Standard pixel";
+    font-weight: 500;
+    margin-bottom: 20px;
+
+}
+.layer2 p{
+    font-family: "Standard pixel";
+}
+.layer2 a{
+    margin-top: 20px;
+    color: #10a33b;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 50px;
+    background: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+}
+.work:hover img{
+    transform: scale(1.1);
+}
+.work:hover .layer{
+    height: 100%;
+}
+.work2:hover img{
+    transform: scale(1.1);
+}
+.work2:hover .layer2{
+    height: 100%;
+}
+.btn{
+    font-family: "Standard pixel";
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #10a33b;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: backround 0.5s;
+}
+.btn:hover{
+    background: #10a33b;
+}
+/* ----------------contacts--------------------- */
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-left p{
+    font-family: "Standard Pixel";
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+#contacts{
+    padding: 50px 0;
+}
+.contact-left p span{
+    font-family: "Standard Pixel";
+    color: #10a33b;
+}
+.socmed-icons img{
+    width: 40px;
+    text-decoration: none;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-right: 15px;
+    display: inline-block;
+}
+footer p{
+   text-align: center;
+   background: #10a33b;
+   font-family: "Standard Pixel";
+}
+.service-list{
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+/* ----------responsiveness-------------- */
+nav .fa-solid{
+    display: none;
+}
+
+@media (max-width: 600px) {
+    #header{
+        background-image: url(images/mobileBackround.png);
+    }
+    .headerText{
+        margin-top: 40%;
+        font-size: 16px;
+    }
+    .headerText h1{
+         font-size: 30px;
+    }
+    nav ul li a{
+        display: inline-block;
+        font-size: 11px;
+    }
+    .about-col-1, .about-col-2{
+        flex-basis: 100%;
+        
+    }
+    .about-col-1{
+        margin-bottom: 30px;
+    }
+    .about-col-2{
+        font-size: 14px;
+    }
+    .tab-links{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    .layer h3{
+        font-size: 12px;
+    }
+    .layer p{
+        font-size: 10px;
+    }
+    .layer a{
+        font-size: 10px;
+        line-height: 30px;
+    background: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    }
+    .layer2 {
+        margin-bottom: 0px
+    }
+    .layer2 h3{
+        font-size: 12px;
+    }
+    .layer2 p{
+        font-size: 10px;
+    }
+    .layer2 a{
+        font-size: 10px;
+        line-height: 30px;
+    background: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    }
+    .container{
+        padding: 5px 10%;
+    }
+ 
+    
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramirez</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/709b88f799.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- -----------Home----------- -->
+    <div id="header">
+<div class="container">
+    <nav>
+        <img src="images/logo.png" class="logo">
+        <ul>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#works">Works</a></li>
+            <li><a href="#contacts">Contact</a></li>
+            <i class="fa-solid fa-x"></i>
+        </ul>
+        <i class="fa-solid fa-bars"></i> 
+    </nav>
+    <div class="headerText">
+        <h1>JƒY RƒZEL<br><span>RƒMIREZ</span></h1>
+        <p1>Aspiring UI/UX/Graphics Designer</p>
+<p>“Ganito ba talaga ang tadhana<br>natin? Kalaban ng kalaban. Kalaban <br>ng kakampi. Nakakapagod.”<br>
+    -Antonio Luna</p>
+
+
+    </div>
+</div>
+    </div>
+    <!-- --------------About------------ -->
+    <div id="about">
+<div class="container">
+<div class="row">
+    <div class="about-col-1">
+        <img src="images/profile.png">
+    </div>
+    <div class="about-col-2">
+        <h1 class="title">ƒbout Me</h1>
+        <p class="aboutpara">Hello, I am Jay, currently living in metro manila and taking BSIT course in our City's University Pamantasan ng Lungsod ng Valenzuela. 20 Years old I am a UI/UX developer, a flexible programmer with java and c# as my forte, graphics designer for creating a suitable and comfortable assets to put in a game or website.
+        </p>
+        
+        <div id="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links"onclick="opentab('experience')">Experience</p>
+            <p class="tab-links"onclick="opentab('education')">Education</p>
+        </div>
+        <div class="tab-contents active-tab" id="skills">
+            <ul>
+                <li><span>UI/UX</span><br>Designer Application/Website Interfaces</li>
+                <li><span>Programmer</span><br>Java/C#</li>
+                <li><span>Graphic Designer</span><br>Pixelated Assets/Pixel Arts</li>
+                <li><span>Gamer</span><br>Just to add more skills</li>
+            </ul>
+        </div>
+        <div class="tab-contents" id="experience">
+            <ul>
+                <li><span>2022</span><br>Beginning of the programming journey</li>
+                <li><span>2023</span><br>Sharpening skills in Java & C#</li>
+                <li><span>2024</span><br>Creating my first ever working local-website portfolio</li>
+            </ul>
+        </div>
+        <div class="tab-contents" id="education">
+            <ul>
+                <li><span>Pio Valenzuela Elementary School</span><br>Graduate</li>
+                <li><span>Polo NHS/SHS</span><br>Graduate</li>
+                <li><span>Pamantasan ng Lungsod ng Valenzuela</span><br>Studying</li>
+
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+</div>
+    </div>
+
+
+    <!-- -----------works------------ -->
+<div id="works">
+<div class="container">
+    <h1 class="title">My Works</h1>
+    <div class="work-list">
+        <div class="work">
+            <img src="images/curiosityApp-work.png">
+            <div class="layer">
+                <h3>Computer Parts Teaching App for Kids</h3>
+                <p>This design is meant for kids to know how their computer works.</p>
+                <a href="https://www.figma.com/proto/e1wBpns4fHE8oYkqukdj5D?node-id=0-1&t=SBoLPUUt3Buce6ZN-6" target="_blank">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+        <div class="work2">
+            <img src="images/saveEarth-work.png">
+            <div class="layer2"> <h3>Save Earth Game design</h3>
+                <p>This is a project in my first year dedicated on making a functional game menu with setthigns and stuff.</p>
+                <a href="https://www.figma.com/proto/eXhHUU7aZNoHtAUSXZZxU6?node-id=0-1&t=SBoLPUUt3Buce6ZN-6" target="_blank">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+            </div>
+           </div>
+    </div>
+    <a href="gallery.html" class="btn">See more</a>
+</div>
+
+</div>
+<!-- --------------Contacts-------------- -->
+<div id="contacts">
+<div class="container">
+<div class="row">
+    <div class="contact-left">
+        <h1 class="title">Contact me</h1>
+        <p>ramirezjayrazel@gmail.com</p>
+        <p><span>+63 </span> 9682512590</p>
+        <div class="socmed-icons">
+            <a href="https://www.facebook.com/jaurazle" target="_blank"><img src="images/facebook.png"></a>
+            <a href="https://discord.gg/5Uakct2wSV" target="_blank"><img src="images/discord-icon-png-.png"></a>
+            <a href="https://www.youtube.com/channel/UCBEN2_SDU8i8RYFCvIx4BfQ" target="_blank"><img src="images/youtube.png"></a>
+        </div>
+
+
+    </div>
+    
+        
+    </div>
+</div>
+
+
+</div>
+    <script>
+
+ var tablinks = document.getElementsByClassName("tab-links");
+ var tabcontents = document.getElementsByClassName("tab-contents");
+ function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link")
+    document.getElementById(tabname).classList.add("active-tab");
+ }
+
+ 
+    </script>
+    <footer class = footer>
+        <p>&copyJay Ramirez 2023 All rights reseved</p>
+    </footer>
+</body>
+</html>
